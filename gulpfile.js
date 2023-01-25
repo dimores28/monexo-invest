@@ -52,7 +52,9 @@ var settings = {
  
 smartgrid('app/less', settings);
 
-const jsFile =['app/lib/jquery-3.3.1.min.js', 'app/lib/typeit.min.js',
+const jsFile =['app/lib/jquery-3.3.1.min.js', 
+'app/lib/typeit.min.js', 
+'app/lib/scrollreveal.js',
 'app/js/script.js'
 ];
 
