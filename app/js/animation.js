@@ -13,6 +13,8 @@ ScrollReveal().reveal('.main-ecosystem__dataText', { delay: 500, distance: '60px
 ScrollReveal().reveal('a.button', { delay: 500, distance: '60px', duration: 500, interval: 100, origin: 'bottom' });
 
 ScrollReveal().reveal('.card', { delay: 500, distance: '60px', duration: 500 });
+ScrollReveal().reveal('.steps', { delay: 500, distance: '60px', duration: 500, origin: 'top' });
+ScrollReveal().reveal('.services', { delay: 600, distance: '60px', duration: 500, origin: 'bottom' });
 
 if ($('*').is('.waves')) {
     if ($(window).width() >= 1024) {
