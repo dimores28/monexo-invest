@@ -1,0 +1,251 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    background: #0F1111;
+    overflow-y: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1150px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 -10px;
+
+}
+
+.section__sub-title {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.body-fixed {
+    overflow-y: hidden;
+}
+
+b.medium {
+    font-size: 20px;
+}
+b.big {
+    font-size: 24px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Plus Jakarta Sans, 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: 16px;
+    color: #FFFFFF;
+    z-index: 0;
+}
+
+.button {
+    height: 46px;
+    padding: 0 32px;
+    background: #0F1111;
+    border: 2px solid #5BC886;
+    border-radius: 32px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #F2D954;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: .3s;
+    white-space: nowrap;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.button:hover {
+    color: #5BC886;
+    border: 2px solid #F2D954;
+    background: #030B0D;
+}
+
+.button.link {
+    border: none;
+    background: unset;
+}
+.button.link:hover {
+    color: #5BC886;
+    background: unset;
+}
+
+/*SCROLLBARS*/
+::-webkit-scrollbar {
+    width: 4px;
+    background: #0F1111;
+}
+::-webkit-scrollbar-thumb {
+    border-width: 1px 1px 1px 2px;
+    background-color: #F2D954;
+    -webkit-border-radius: 2px;
+}
+::-webkit-scrollbar-track {
+    border-width: 0;
+}
+:root {
+    scrollbar-color: #F2D954 #0F1111 !important;
+    scrollbar-width: thin !important;
+}
+/*SCROLLBARS END*/
+
+/*animation */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: scale(0.5, 0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+/*animation end */
+
+/*INPUT*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+/*INPUT END*/
+
+/*CHECKBOX*/
+.custom-checkbox__block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.custom-checkbox + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.custom-checkbox + label a {
+    margin-left: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #5BC886;
+    text-decoration: unset;
+    transition: .3s;
+}
+.custom-checkbox + label a:hover {
+    color: #F2D954;
+}
+.custom-checkbox + label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-right: 10px;
+    background-size: 50% 50%;
+
+    background: transparent;
+    border: 2px solid #5BC886;
+    border-radius: 2px;
+}
+.custom-checkbox:checked + label::after {
+    content: '';
+    display: block;
+    background: #F2D954;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    position: absolute;
+    left: 6px;
+    bottom: 6px;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled + label::before {
+    background-color: #FFFFFF;
+}
+/*CHECKBOX END*/
+
+.section__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1150px) {
+    .section__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .section__sub-title {
+        font-size: 14px;
+        line-height: 26px;
+        text-align: left;
+    }
+}

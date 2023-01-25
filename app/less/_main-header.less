@@ -1,0 +1,115 @@
+.main-header {
+    background-color:#0F1111;
+    background-image: url('../img/main/header.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    &__data {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        margin-top: 20px;
+    }
+
+    &__images {
+        flex-basis: 30%;
+        flex-shrink: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_center {
+            width: 186px;
+        }
+    }
+    
+}
+
+.main-header .container {
+    padding-top: 70px;
+}
+
+.main-header .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 233px;
+    padding-bottom: 217px;
+}
+
+
+.baner {
+    flex-grow: 1;
+    
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 52px;
+        line-height: 68px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    
+        text-align: left;
+        transition: .3s;
+        margin: 0 0 30px 0;
+
+        min-height: 136px;
+    }
+
+    &__title.center {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__text{
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.05em;
+    
+        transition: .3s;
+
+        &_small {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1023px) {
+    .main-header__text {
+        font-style: normal;
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        margin-top: 20px;
+    }
+
+    .main-header .container {
+        flex-wrap: wrap;
+    }
+
+    .main-header {
+
+        &__images {
+            flex-grow: 1;
+            margin-top: 20px;
+            padding: 20px;
+        }
+    }
+}
+

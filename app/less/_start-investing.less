@@ -1,0 +1,50 @@
+.start-investing {
+   padding: 50px 0;
+}
+
+.step {
+   margin: 20px 10px;
+   box-sizing: border-box;
+   word-wrap: break-word;
+   text-align: center;
+
+   max-width: calc(100% / 4 - 20px);
+
+   &__img_wrap {
+      margin-bottom: 20px;
+   }
+
+   &__img {
+      width: 80%;
+   }
+
+   &__title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 20px;
+      text-transform: none;
+      margin: 0;
+      margin-bottom: 20px;
+
+   }
+
+   &__desc {
+      font-weight: 200;
+      font-size: 14px;
+      line-height: 18px;
+      color: #FFFFFF;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .step {
+      max-width: calc(100% / 2 - 20px);
+   }
+}
+
+@media screen and (max-width: 576px) {
+   .step {
+      max-width: calc(100% - 20px);
+   }
+}
