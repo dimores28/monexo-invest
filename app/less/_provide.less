@@ -1,5 +1,5 @@
 .provide {
-   padding: 50px 20px;
+   padding: 100px 20px 150px;
    background: #060606;
 }
 
@@ -36,5 +36,17 @@
       line-height: 18px;
       color: #FFFFFF;
       margin-top: auto;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .service {
+      max-width: calc(100% / 2 - 20px);
+   }
+}
+
+@media screen and (max-width: 476px) {
+   .service {
+      max-width: calc(100% - 20px);
    }
 }

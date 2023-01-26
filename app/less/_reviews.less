@@ -1,13 +1,18 @@
 .reviews {
     position: relative;
-    padding: 144px 0 166px;
-    min-height: 638px;
+    // padding: 144px 0 166px;
+    // min-height: 638px;
     
     background-color:#0F1111;
     background-image: url('../img/main/ecosystem.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    &__title {
+        flex-grow: 1;
+        flex-basis: 100%;
+    }
 
     &__background {
         background: #0F1111;
@@ -27,6 +32,13 @@
     }
 }
 
+// .reviews .container {
+//     flex-wrap: wrap;
+// }
+
+.reviews .wrapper {
+    padding: 100px 0 166px;
+}
 
 canvas {
     display: block;
