@@ -60,9 +60,10 @@ canvas {
 .review {
     padding: 20px;
     margin: 0 24px;
-
+    opacity: 0.4;
     display: flex;
     text-align: center;
+    transition: all 0.3s ease ;
 
     &__group {
         margin-bottom: 20px;
@@ -110,6 +111,9 @@ canvas {
     }
 }
 
+.review.slick-center {
+    opacity: 1;
+}
 
 /* Точки (булиты) */
 .reviews .slick-dots {
@@ -146,5 +150,32 @@ canvas {
             display: block;
         }
     }
+
+    // .review-slider {
+
+    // }
+
+    .review {
+        max-width: 468px;
+    
+        &__username {
+            display: block;
+        }
+    }
+
+    .review .slick-list {
+        display: flex;
+        overflow: hidden;
+        min-width: 0;
+        max-width: 600px;
+    }
+
+    .review .slick-track {
+        max-width: 600px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
 
 }
