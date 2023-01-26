@@ -53,7 +53,7 @@ var settings = {
 smartgrid('app/less', settings);
 
 const jsFile =['app/lib/jquery-3.3.1.min.js', 
-'app/lib/typeit.min.js', 
+// 'app/lib/typeit.min.js', 
 'app/lib/scrollreveal.js',
 'app/js/script.js'
 ];
@@ -121,14 +121,14 @@ gulp.task('img', function() {
 gulp.task('prebuild', async function() {
 
 	var buildCss = gulp.src( // Переносим библиотеки в продакшен
-		'app/css/main.min.css'
+		'app/css/*.min.css'
 		)
 	.pipe(gulp.dest('dist/css'))
 
 	var buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
 	.pipe(gulp.dest('dist/fonts'))
 
-	var buildJs = gulp.src('app/js/libs.min.js') // Переносим скрипты в продакшен
+	var buildJs = gulp.src('app/js/*') // Переносим скрипты в продакшен
 	.pipe(gulp.dest('dist/js'))
 
 	var buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен

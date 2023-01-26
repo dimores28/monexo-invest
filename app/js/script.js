@@ -8,7 +8,7 @@ $('.header-mobile__close').on("click", function(){
     $('.header-mobile__wrapper').removeClass('active');
 });
 
-//slider 2
+//slider 
 $('.main-plans .main-slider__navItem').click(function () {
     $('.main-plans .main-slider__navItem').removeClass('active');
     $(this).addClass('active');
@@ -36,4 +36,5 @@ $('.main-plans .main-slider__navButton').click(function () {
         }
     }
 });
+
 

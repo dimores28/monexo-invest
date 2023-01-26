@@ -4,6 +4,11 @@
 	<title>Monexo Invest</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:site_name" content="monexo-invest.com">
+    <meta property="og:url" content="monexo-invest.com/">
+    <meta name="theme-color" content="#060606"/>
+    <meta name="robots" content="max-image-preview:large">
+    <meta property="og:site_name" content="Monexo - Switch to Higher Returns">
 
 	<link rel="icon" href="https://monexo.co/wp-content/uploads/2022/09/cropped-monexo-favicon-32x32.png" sizes="32x32">
     <link rel="icon" href="https://monexo.co/wp-content/uploads/2022/09/cropped-monexo-favicon-192x192.png" sizes="192x192">
@@ -12,7 +17,8 @@
 
 	<link rel="stylesheet" href="css/animate.min.css">    
 	<link rel="stylesheet" href="css/main.min.css">
-	<script src="lib/typeit.min.js"></script>
+
+	<script src="js/typeit.min.js"></script>
 </head>
 <body>
 	<header class="header">
@@ -672,8 +678,112 @@
 
                 <div class="wrapper">
                     <h2 class="section__title">Wall of Happy Customers</h2>
-                </div>
 
+                    <div class="review-slider">
+                        <div class="review-slider__item review">
+                            <div class="review__group">
+                                <div class="review__photo">
+                                    <img src="img/reviews/testimonials-.jpg" alt="Ankit Roy" class="review__img">
+                                </div>
+                                <h3 class="review__username">
+                                    Ankit Roy
+                                </h3>
+                            </div>
+
+                            <p class="review__text">
+                                For those looking for alternative investment options to FDs 
+                                and the stock market, Monexo is a great platform. 
+                                I really like how simple and transparent it is to invest via Monexo. Great job team!
+                            </p>
+                        </div>
+
+                        <div class="review-slider__item review">
+                            <div class="review__group">
+                                <div class="review__photo">
+                                    <img src="img/reviews/testimonials-1.jpg" alt="Rashmi Yadav" class="review__img">
+                                </div>
+                                <h3 class="review__username">
+                                    Rashmi Yadav
+                                </h3>
+                            </div>
+
+                            <p class="review__text">
+                                Monexo is a great platform for people who want to invest their money 
+                                in options other than FDs and the stock market. 
+                                I really like how simple and transparent it is to invest via Monexo. Great job team!
+                            </p>
+                        </div>
+
+                        <div class="review-slider__item review">
+                            <div class="review__group">
+                                <div class="review__photo">
+                                    <img src="img/reviews/testimonials-2.jpg" alt="Jeevan Goyal" class="review__img">
+                                </div>
+                                <h3 class="review__username">
+                                    Jeevan Goyal
+                                </h3>
+                            </div>
+
+                            <p class="review__text">
+                                Monexo is a great platform for people who want to invest their money 
+                                in options other than FDs and the stock market. 
+                                I really like how simple and transparent it is to invest via Monexo. Great job team!
+                            </p>
+                        </div>
+
+                        <div class="review-slider__item review">
+                            <div class="review__group">
+                                <div class="review__photo">
+                                    <img src="img/reviews/testimonials-3.jpg" alt="Ankit Roy" class="review__img">
+                                </div>
+                                <h3 class="review__username">
+                                    Ankit Roy
+                                </h3>
+                            </div>
+
+                            <p class="review__text">
+                                Monexo is a great platform for people who want to invest their money 
+                                in options other than FDs and the stock market. 
+                                I really like how simple and transparent it is to invest via Monexo. Great job team!
+                            </p>
+                        </div>
+
+                        <div class="review-slider__item review">
+                            <div class="review__group">
+                                <div class="review__photo">
+                                    <img src="img/reviews/testimonials-4.jpg" alt="Rajiveer Pathak" class="review__img">
+                                </div>
+                                <h3 class="review__username">
+                                    Rajiveer Pathak
+                                </h3>
+                            </div>
+
+                            <p class="review__text">
+                                Monexo is a great platform for people who want to invest their money 
+                                in options other than FDs and the stock market. 
+                                I really like how simple and transparent it is to invest via Monexo. Great job team!
+                            </p>
+                        </div>
+
+                        <div class="review-slider__item review">
+                            <div class="review__group">
+                                <div class="review__photo">
+                                    <img src="img/reviews/testimonials-5.jpg" alt="Rakshit Sarang" class="review__img">
+                                </div>
+                                <h3 class="review__username">
+                                    Rakshit Sarang 
+                                </h3>
+                            </div>
+
+                            <p class="review__text">
+                                Monexo is a great platform for people who want to invest their money 
+                                in options other than FDs and the stock market. 
+                                I really like how simple and transparent it is to invest via Monexo. Great job team!
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </sections>
 	</main>
@@ -776,5 +886,43 @@
 	<script src="js/libs.min.js"></script>
     <script src="js/ShaderProgram.js"></script>
     <script src="js/animation.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script>
+        $('.review-slider').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 6000,
+            arrows: false,
+            infinite: true,
+            dots: true,
+
+
+            responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+                }
+            }
+            ]
+        });
+
+    </script>
+
 </body>
 </html>
