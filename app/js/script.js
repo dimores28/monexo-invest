@@ -38,3 +38,42 @@ $('.main-plans .main-slider__navButton').click(function () {
 });
 
 
+function resizeEmptySpace() {
+
+
+    $(".main").css("height", "auto");
+
+    var footer = $(".footer").innerHeight();
+    var windowHeight = $(window).height();
+    var main = $(".main").innerHeight();
+
+    if ($(window).width() >= 1025 && $(window).width() <= 1537) {
+
+    } else if ($(window).width() > 1537) {
+
+    } else if ($(window).width() < 1023) {
+
+    }
+    if ((footer + main) < windowHeight) {
+        $(".main").css("height", (windowHeight - footer));
+    } else {
+        $(".main").css("height", "auto");
+    }
+}
+
+
+//resize func
+$(window).on('resize', function () {
+    resizeEmptySpace();
+
+    var vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', vh + 'px');
+});
+
+resizeEmptySpace();
+
+window.onload = function () {
+    resizeEmptySpace();
+};
+
+$(window).trigger('resize');

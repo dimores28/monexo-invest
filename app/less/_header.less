@@ -18,7 +18,6 @@
 }
 
 .header-logo {
-    height: 46px; 
     max-width: 130px;
 
     &__link {
@@ -331,4 +330,27 @@
         margin-right: 0;
     }
 
+}
+
+@media screen and (max-width: 368px) {
+    .header .container {
+        flex-wrap: wrap;
+        justify-content: end;
+        padding-top: 15px;
+    }
+
+    .header-logo__link {
+        order: 1;
+        flex-grow: 1; 
+        margin-top: 40px;
+    }
+
+    .header-mobile__close {
+        order: 1;
+    }
+
+    .header-mobile .header-mobile__top .header-logo__link {
+        margin-top: 0;
+        justify-content: start;
+    }
 }

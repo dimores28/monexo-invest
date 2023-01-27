@@ -32,8 +32,8 @@
 
 
 
-.reviews .wrapper {
-    padding: 100px 0 116px;
+.reviews__title {
+    padding-top: 150px;
 }
 
 canvas {
@@ -55,6 +55,7 @@ canvas {
 
 .review-slider {
      padding-top: 50px;
+     padding-bottom: 20px;
 }
 
 .review {
@@ -108,6 +109,7 @@ canvas {
         line-height: 24px;
         text-align: center;
         letter-spacing: 0.05em;
+        margin-bottom: 10px;
     }
 }
 
@@ -144,16 +146,11 @@ canvas {
 @media screen and (max-width: 1023px) {
     .reviews {
         padding: 50px 0 90px;
-        // min-height: unset;
 
         &__backgroundImg {
             display: block;
         }
     }
-
-    // .review-slider {
-
-    // }
 
     .review {
         max-width: 468px;
@@ -177,5 +174,11 @@ canvas {
 }
 
 @media screen and (max-width: 768px) {
-
+    .review {
+        max-width: 500px;
+    
+        &__username {
+            display: block;
+        }
+    }
 }
