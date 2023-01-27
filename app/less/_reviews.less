@@ -1,11 +1,13 @@
 .reviews {
+    display: block;
     position: relative;
-    
+    box-sizing: border-box;
     background-color:#0F1111;
     background-image: url('../img/main/ecosystem.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 150px 0;
 
     &__title {
         flex-grow: 1;
@@ -32,10 +34,6 @@
 
 
 
-.reviews__title {
-    padding-top: 150px;
-}
-
 canvas {
     display: block;
 }
@@ -46,29 +44,26 @@ canvas {
     top: 0;
     right: 0;
     bottom: 0;
+    z-index: -1;
 }
 
-.blok {
-    width: 100%;
-    height: 700px;
-}
 
 .review-slider {
-     padding-top: 50px;
+     padding-top: 100px;
      padding-bottom: 20px;
 }
 
-.review {
+.review-slider .review {
     padding: 20px;
     margin: 0 24px;
     opacity: 0.4;
     display: flex;
+    flex-direction: column;
     text-align: center;
     transition: all 0.3s ease ;
 
     &__group {
         margin-bottom: 20px;
-        vertical-align: middle;
     }
 
     &__photo {
@@ -81,6 +76,7 @@ canvas {
         padding: 8px;
         border: 2px solid #F2D954;
         margin-bottom: 20px;
+        display: block;
         
     }
 
@@ -144,13 +140,6 @@ canvas {
 
 
 @media screen and (max-width: 1023px) {
-    .reviews {
-        padding: 50px 0 90px;
-
-        &__backgroundImg {
-            display: block;
-        }
-    }
 
     .review {
         max-width: 468px;
@@ -169,18 +158,10 @@ canvas {
 
 }
 
-@media screen and (max-width: 768px) {
-    .review {
-    
-        &__username {
-            display: block;
-        }
-    }
-}
 
 @media screen and (max-width: 478px) {
 
-    .review {
+    .review-slider .review {
         padding: 0;
     }
 }
